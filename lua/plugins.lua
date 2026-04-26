@@ -81,3 +81,9 @@ require("blink.cmp").setup({
 vim.pack.add({
 	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
 })
+
+-- which-key
+vim.pack.add({
+	{ src = "https://github.com/folke/which-key.nvim" },
+})
+
