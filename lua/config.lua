@@ -1,13 +1,19 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.colorcolumn = "120"
-vim.opt.winborder = "rounded"
-vim.opt.clipboard = "unnamedplus"
-vim.opt.cursorline = true
-vim.opt.mouse = 'a'
+local options = {
+	nu = true,
+	relativenumber = true,
+	tabstop = 4,
+	softtabstop = 4,
+	shiftwidth = 4,
+	colorcolumn = "120",
+	winborder = "rounded",
+	clipboard = "unnamedplus",
+	cursorline = true,
+	mouse = "a",
+}
+
+for option, value in pairs(options) do
+	vim.opt[option] = value
+end
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

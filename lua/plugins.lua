@@ -1,4 +1,4 @@
--- Ceberdream theme
+-- cyberdream theme
 vim.pack.add({
 	{ src = "https://github.com/scottmckendry/cyberdream.nvim" },
 })
@@ -6,14 +6,14 @@ vim.pack.add({
 -- additional settings
 require("cyberdream").setup({})
 
--- Mason
+-- mason
 vim.pack.add({
 	{ src = "https://github.com/mason-org/mason.nvim" },
 })
 
 require("mason").setup({})
 
--- Lualine
+-- lualine
 vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 })
@@ -24,13 +24,13 @@ require("lualine").setup({
 	}
 })
 
--- Devicons
+-- devicons
 vim.pack.add({
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 })
 
 
--- Blink.cmp
+-- blink.cmp
 vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("^1") },
 })
@@ -44,8 +44,8 @@ require("blink.cmp").setup({
         ["<C-p>"] = {},
         ["<Tab>"] = {},
         ["<S-Tab>"] = {},
-        ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
-        ["<C-n>"] = { "select_and_accept" },
+        -- ["<C-n>"] = { "show", "show_documentation", "hide_documentation" },
+        ["<C-y>"] = { "select_and_accept" },
         ["<C-k>"] = { "select_prev", "fallback" },
         ["<C-j>"] = { "select_next", "fallback" },
         ["<C-b>"] = { "scroll_documentation_down", "fallback" },
@@ -76,4 +76,3 @@ require("blink.cmp").setup({
 
     sources = { default = { "lsp" } }
 })
-
