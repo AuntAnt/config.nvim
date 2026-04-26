@@ -76,3 +76,8 @@ require("blink.cmp").setup({
 
     sources = { default = { "lsp" } }
 })
+
+--fff.nvim
+vim.pack.add({
+	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
+})
