@@ -1,4 +1,4 @@
 return {
 	cmd = { "clangd" },
-	filetypes = { "c", "cpp", "obj" },
+	filetypes = { "c", "cpp", "h", "obj" },
 }
