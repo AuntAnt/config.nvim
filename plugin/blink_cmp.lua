@@ -1,35 +1,3 @@
--- cyberdream theme
-vim.pack.add({
-	{ src = "https://github.com/scottmckendry/cyberdream.nvim" },
-})
-
--- additional settings
-require("cyberdream").setup({})
-
--- mason
-vim.pack.add({
-	{ src = "https://github.com/mason-org/mason.nvim" },
-})
-
-require("mason").setup({})
-
--- lualine
-vim.pack.add({
-	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
-})
-
-require("lualine").setup({
-	options = {
-		theme = "base16"
-	}
-})
-
--- devicons
-vim.pack.add({
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-})
-
-
 -- blink.cmp
 vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("^1") },
@@ -76,22 +44,3 @@ require("blink.cmp").setup({
 
     sources = { default = { "lsp" } }
 })
-
---fff.nvim
-vim.pack.add({
-	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
-})
-
--- which-key
-vim.pack.add({
-	{ src = "https://github.com/folke/which-key.nvim" },
-})
-
--- autopairs
-vim.pack.add({
-	{ src = "https://github.com/windwp/nvim-autopairs" },
-})
-
-require("nvim-autopairs").setup {
-	event = "InsertEnter"
-}
